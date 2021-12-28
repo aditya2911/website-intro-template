@@ -97,6 +97,7 @@
     height: 15rem;
     flex: 1 1 0%;
     border: 1px solid black;
+    background: #6d747d;
 }
 
 
@@ -124,7 +125,7 @@ button{
     gap: 2rem;
 }
 
-.info:nth-child(1){
+.info-intro{
     font-weight: 600;
     font-size: 2.25rem;
     text-align: center;
@@ -157,4 +158,80 @@ button{
 
 .info-subtext{
 text-align: center;
+}
+
+.quote-container{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 5rem;
+    align-items: center;
+    justify-content: center;
+    gap:4rem;
+    background: var(--quote-section-background-color);
+}
+
+.quote{
+    font-style: italic;
+    font-weight: lighter;
+    color: var(--quote-text-color);
+    font-size: 2.25rem;
+    flex: 1 1 auto;
+    max-width: 50rem;
+    min-width: 18rem;
+}
+
+.quote-provider{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    max-width: 50rem;
+}
+
+.signup-container{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 5rem 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-content{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 4rem 4rem;
+    border-radius: 1rem;
+    gap: 2rem;
+    background-color: var(--button-color);
+}
+.signup-text{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+}
+
+.signup-text :nth-child(1){
+    font-weight: bolder;
+    font-size: 1.1rem;
+    color: var(--hero-main-text-color);
+}
+
+.signup-text :nth-child(2){
+    color: var(--hero-secondary-text-color);
+}
+
+.signup-button{
+    border: 0.1rem solid white;
+    font-weight: bold;
+}
+
+.footer{
+    background: var(--dark-background-color);
+    text-align: center;
+    padding: 2rem;
+    color: var(--hero-secondary-text-color);
 }
